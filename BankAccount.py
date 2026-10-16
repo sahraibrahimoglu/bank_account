@@ -1,14 +1,3 @@
-"""Özellikler: owner (isim), balance (bakiye, varsayılan 0)
-Sınıf özelliği: account_count, toplam oluşturulan hesap sayısı. Her yeni hesapta __init__ içinde artsın.
-Metodlar:
-deposit(amount): bakiyeye para ekler.
-withdraw(amount): bakiyeden para çeker.
-__str__: Ali | balance: 150.00 gibi bir yazı döndürsün (return, print değil).
-2) Kurallar (raise kullan)
-deposit ve withdraw içinde miktar 0 veya negatifse ValueError fırlat.
-withdraw içinde miktar bakiyeden büyükse ValueError("Insufficient funds") fırlat.
-Hatalı durumda bakiye değişmemeli."""
-
 class BankAccount:
     account_count = 0
     def __init__(self, owner, balance = 0 ):
